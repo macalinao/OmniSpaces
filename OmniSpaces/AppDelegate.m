@@ -8,19 +8,29 @@
 
 #import "AppDelegate.h"
 
+@import AppKit;
+
 @interface AppDelegate ()
 
-@property (weak) IBOutlet NSWindow *window;
+@property (strong, nonatomic) NSStatusItem *item;
+
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    
+    // Create status item
+    _item = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    _item.title = @"Test";
+    
+    NSLog(@"Asdf");
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+    // Remove status item from bar
+    [[NSStatusBar systemStatusBar] removeStatusItem:_item];
+    _item = nil;
 }
 
 @end

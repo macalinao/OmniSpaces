@@ -10,7 +10,6 @@
 		3CE6876C1AF54EEB0076FFE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE6876B1AF54EEB0076FFE6 /* AppDelegate.m */; };
 		3CE6876E1AF54EEB0076FFE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE6876D1AF54EEB0076FFE6 /* main.m */; };
 		3CE687701AF54EEB0076FFE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE6876F1AF54EEB0076FFE6 /* Images.xcassets */; };
-		3CE687731AF54EEB0076FFE6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE687711AF54EEB0076FFE6 /* MainMenu.xib */; };
 		3CE6877F1AF54EEB0076FFE6 /* OmniSpacesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE6877E1AF54EEB0076FFE6 /* OmniSpacesTests.m */; };
 /* End PBXBuildFile section */
 
@@ -31,10 +30,10 @@
 		3CE6876B1AF54EEB0076FFE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3CE6876D1AF54EEB0076FFE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3CE6876F1AF54EEB0076FFE6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3CE687721AF54EEB0076FFE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3CE687781AF54EEB0076FFE6 /* OmniSpacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmniSpacesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE6877D1AF54EEB0076FFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CE6877E1AF54EEB0076FFE6 /* OmniSpacesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OmniSpacesTests.m; sourceTree = "<group>"; };
+		3CE687881AF54EFA0076FFE6 /* CGSPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSPrivate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +78,8 @@
 				3CE6876A1AF54EEB0076FFE6 /* AppDelegate.h */,
 				3CE6876B1AF54EEB0076FFE6 /* AppDelegate.m */,
 				3CE6876F1AF54EEB0076FFE6 /* Images.xcassets */,
-				3CE687711AF54EEB0076FFE6 /* MainMenu.xib */,
 				3CE687681AF54EEB0076FFE6 /* Supporting Files */,
+				3CE687881AF54EFA0076FFE6 /* CGSPrivate.h */,
 			);
 			path = OmniSpaces;
 			sourceTree = "<group>";
@@ -192,7 +191,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CE687701AF54EEB0076FFE6 /* Images.xcassets in Resources */,
-				3CE687731AF54EEB0076FFE6 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,17 +230,6 @@
 			targetProxy = 3CE687791AF54EEB0076FFE6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3CE687711AF54EEB0076FFE6 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3CE687721AF54EEB0076FFE6 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3CE687801AF54EEB0076FFE6 /* Debug */ = {
@@ -401,6 +388,7 @@
 				3CE687841AF54EEB0076FFE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CE687851AF54EEB0076FFE6 /* Build configuration list for PBXNativeTarget "OmniSpacesTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +397,7 @@
 				3CE687871AF54EEB0076FFE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
