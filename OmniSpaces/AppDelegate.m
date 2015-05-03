@@ -24,7 +24,24 @@
     _item = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     _item.title = @"Test";
     
+    _item.menu = [self createMenu];
+    
     NSLog(@"Asdf");
+}
+
+- (NSMenu *) createMenu{
+    NSMenu *menu = [[NSMenu alloc] init];
+    [menu addItemWithTitle:@"Workspace 1" action:@selector(switchWorkspace:) keyEquivalent:@""];
+    return menu;
+}
+
+- (IBAction)switchWorkspace:(id)sender {
+    if (![sender isKindOfClass:[NSMenuItem class]]) return;
+    NSMenuItem *item = (NSMenuItem *) sender;
+    
+    int workspace = [[[item.title componentsSeparatedByString:@" "] lastObject] intValue];
+    
+    NSLog(@"%d", workspace);
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
